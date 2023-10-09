@@ -2,7 +2,7 @@
 
 Description in english:
 
-This modification is based on Antistasi Plus 2.1.11 from Soctates. This modification does not add any new maps with certain fractions, but adds custom fractions separately, usually in variations for temperate and desert climates, and these fractions can be selected on any map supported by Antistasi Plus 2.1.11.
+This modification is based on Antistasi Plus 2.3.2 from Soctates. This modification does not add any new maps with certain fractions, but adds custom fractions separately, usually in variations for temperate and desert climates, and these fractions can be selected on any map supported by Antistasi Plus 2.1.11.
 
 At this moment, the following factions have been added:
 
@@ -56,7 +56,7 @@ Credits: Original Mission by barbolani Antistasi Community Edition by Official A
 
 Описание на русском:
 
-Данная модификация сделана на основе Antistasi Plus 2.1.11 от Soctates. Данная модификация не добавляет каких либо новых карт с определенными фракциями, а добавляет отдельно кастомные фракции, обычно в вариациях для умеренного и пустынного климата и эти фракции можно выбрать на любой карте поддерживаемой оригинальной Antistasi Plus.
+Данная модификация сделана на основе Antistasi Plus 2.3.2 от Soctates. Данная модификация не добавляет каких либо новых карт с определенными фракциями, а добавляет отдельно кастомные фракции, обычно в вариациях для умеренного и пустынного климата и эти фракции можно выбрать на любой карте поддерживаемой оригинальной Antistasi Plus.
 
 На даннный момент добавлены следующие фракции:
 
