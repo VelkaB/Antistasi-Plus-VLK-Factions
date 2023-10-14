@@ -1,57 +1,108 @@
-<div align="center">
-  <img alt="Antistasi Plus" width="200" height="200" src="https://user-images.githubusercontent.com/6746043/206381805-43f2a69a-2754-49f3-95e2-aeaad8a4cee3.png">
-  <h1>Antistasi Plus</h1>
-  <p>
-    <i>An Arma 3 persistent multiplayer scenario about guerilla warfare tactics.</i>
-    <br/>
-    <i>Fork of Antistasi Community Version focused on expanding player's capabilities and introducing new gameplay features.</i>
-  </p>
-  <p>
-    <a href="https://github.com/igorkis-scrts/A3-Antistasi-Plus/releases/latest">
-        <img src="https://img.shields.io/badge/Current_Stable_Version-2.3.2-red" alt="Antistasi Plus Version">
-    </a>
-  </p>
-</div>
+!!!! Be careful, when you convert vlkpictures to pbo via Visual Studio Code, .paa images (flags and markers) are not displayed as they should, use other software to convert this folder
 
-### Latest Stable Release
-**[Steam Workshop: Antistasi Plus](https://steamcommunity.com/sharedfiles/filedetails/?id=2912941775)**
+Description in english:
 
-## Features 
-- Arms Dealer vendor with the ability to directly buy and sell weapons, items and gear
-- Vehicle Black Market - possibility to spend money on vehicles, aircrafts et cetera
-- Commander Menu (CTRL+T shortcut) with various new abilities which commander can use to support his troops
-- Rebel Loadouts - ability to customize AI rebels weapons and equipment for each infantry class
-- Special crate and commander ability provides capabilities to automatically loot bodies, surrender crates and weapons on ground to reduce tediousness of looting
-- New marker types - military administrations and military bases
-- 8 random event types (Civilian Helicopter Flyby, Vehicle Drone Strike, Roving Mortar and others)
-- 9 new mission types (Find the Arms Dealer, Salvage Helicrash, Prevent Artillery Strike, Ambush Officer, Seize Airdrop, Rescue Smugglers, Rescue Rebel Informer, Investigate the Battleground, Kill Cell Leader)
-- Ability to build persistent roadblocks, watchposts, AA, AT emplacements
-- Civilian Presence Module - more performance-friendly and alive footmobile civilians
-- Rally Point - temporary spawn point that can be placed by commander
-- Persistent save for constructions
-- Additional commander abilities - Smoke Barrage, Flare Barrage, Light Vehicle Airdrop, Recon Plane Run, Supply Crate Airdrop, Chemical Airstrike
-- Special commander ability - Paradrop (commander can move player paratroopers to airplane for HALO jump on desired location)
-- Rivals - OPFOR-backed guerilla faction that has different views on country's future, they will try to disrupt your insurgency movement with dirty methods, covert operations and blunt force
-- Infantry unit tiers based on current war level, the bigger war level - the better enemy's infantry units equipment
-- Discord Rich Presence support
-- Chemical airstrike - new airstirke variant which can be used by rebel commander and invader faction
-- Howitzer and Mechanized Airborne QRF support types
-- Integrated Mag Repack script
-- Various additional settings and small abilities - vehicle unflip, server time multiplier et cetera
-- Various QoL fixes, tweaks, enhancements, UI improvements (Similar weapons counted as one entity on infinite unlock, Zeus persistent constructions and many more! see changelog to get full details)
+This modification is based on Antistasi Plus 2.3.2 from Soctates. This modification does not add any new maps with certain fractions, but adds custom fractions separately, usually in variations for temperate and desert climates, and these fractions can be selected on any map supported by Antistasi Plus 2.3.2.
 
-## Credits
-- Original Mission by barbolani
-- Antistasi Community Edition by Official Antistasi Community
-- Magrepack by Outlawled, R3vo and OOster
-- HALs_Store by HallyG, R3vo and barman75
-- DRO by mbrdmn
-- Discord Rich Presence by ConnorAU 
-- Antistasi Plus fork by Socrates
+At this moment, the following factions have been added:
 
-## Additional Icons Credits
-<div>
-<a target="_blank" href="https://icons8.com/icon/12212/hdd">HDD</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-<br/>
-<a target="_blank" href="https://icons8.com/icon/17932/walkie-talkie">Walkie Talkie</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-</div>
+Playable (Reb):
+
+PMC "ION"
+DRG VSRF
+Green Berets
+UKSF
+Opponents (AI):
+
+United Nations Temperate
+United Nations Arid
+United States Army Temperate
+United States Army Arid
+French Army Temperate
+French Army Arid
+PMC ION Temperate
+PMC ION Arid
+Russian Army Temperate
+Russian Army Arid
+Green Berets Arid (Rival)
+Green Berets Temperate (Rival)
+From other changes:
+
+The transport purchase menu has been changed, a multiple choice of vehs has been added.
+The "Undercover" mode has been changed, now you can ride in a military uniform covertly in civilian transport.
+Completely redesigned the gun dealer's shop
+Integrated CUP Weapons, Units, Vehicles (In the original antistasi, it will conflict with the RHS and will not allow the game to start)
+Added weapons from CUP Weapons
+Added new selection options in the settings (loot collection distance, number of support points, AI control time, distance of clearing trees and cost of restoring buildings)
+In the factions where this corresponds to reality, new types of artillery, including reactive, have been added for the "Destroy Artillery" mission)
+Prices for equipment on the black market are reduced by default, at the start of the game, the price level can be selected in the parameters
+Bots are disabled the ability to "prone" by default (exception - the commander of the group can order them to do this)
+Installation:
+
+Download Antistasi Plus VLK Factions from the workshop and download all the dependent mods
+Turn off all other versions of Antistasi Plus (Otherwise it will give a mismatch, crash, or other errors)
+Enable Antistasi Plus VLK Factions and all dependent mods in the launcher
+In the game, go to the network game section, create a new server and select the map supported by Antistasi Plus.
+Configure the necessary parameters, select factions and start playing.
+Notes:
+
+!!! If the mod is not updated, click "Fix" in the launcher or unsubscribe and download again.
+
+!!! You can find uniforms (helmets, body armor, backpacks) of playable factions either from loot boxes or buy them on the black market.
+
+Credits: Original Mission by barbolani Antistasi Community Edition by Official Antistasi Community Magrepack by Outlawled, R3vo and OOster HALs_Store by HallyG, R3vo and barman75 DRO by mbrdmn Discord Rich Presence by ConnorAU Antistasi Plus by Socrates Antistasi Plus VLK Faction by Velka
+
+Осторожно, когда вы конвертируете vlkpictures в pbo через Visual Studio Code, .paa картинки (флаги) не отображаются как должны, используйте другое ПО для конвертации данной папки
+
+Описание на русском:
+
+Данная модификация сделана на основе Antistasi Plus 2.3.2 от Soctates. Данная модификация не добавляет каких либо новых карт с определенными фракциями, а добавляет отдельно кастомные фракции, обычно в вариациях для умеренного и пустынного климата и эти фракции можно выбрать на любой карте поддерживаемой оригинальной Antistasi Plus.
+
+На даннный момент добавлены следующие фракции:
+
+Игровые (Reb):
+
+ЧВК «ИОН»
+ДРГ ВСРФ
+Зелёные береты
+ССО Великобритании
+Противники (AI):
+
+United Nations Temperate
+United Nations Arid
+United States Army Temperate
+United States Army Arid
+French Army Temperate
+French Army Arid
+PMC ION Temperate
+PMC ION Arid
+Russian Army Temperate
+Russian Army Arid
+Green Berets Arid (Rival)
+Green Berets Temperate (Rival)
+Из других изменений:
+
+Изменено меню покупки транспорта, добавлен множественный выбор техники.
+Изменен режим "Под прикрытием", теперь можно ездить в военной в форме скрытно в гражданском транспорте.
+Полностью переработан магазин торговца оружием
+Интегрирован CUP Weapons, Units, Vehicles (В оригинальном антистаси он будет конфликтовать с RHS и не даст запустить игру)
+Добавлены новые параметры выбора в настройках (дистанция сбора лута, кол-во очков поддержки, время управления AI, можно выбрать дистанцию отчистки деревьев и стоимость восстановления построек)
+В фракциях, где это соответствует реальности, для задания «Destroy Artillery» добавлены новые виды артиллерии, в том числе реактивной)
+Цены на технику на черном рынке снижены по умолчанию, при старте игры уровень цен можно выбрать в параметрах
+Ботам отключена возможность лежать по умолчанию (исключение - командир группы может им приказать это сделать)
+Установка:
+
+Скачать Antistasi Plus VLK Factions из мастерской и скачать все зависимые моды
+Выключить все другие версии Antistasi Plus (В противном случае выдаст несоответствие, краш, или другие ошибки)
+Включить в лаунчере Antistasi Plus VLK Factions и все зависимые моды
+В игре зайти в раздел сетевая игра, создать новый сервер и выбрать интересующую карту, поддерживаемую Antistasi Plus.
+Настроить необходимые параметры, выбрать фракции и приступать к игре.
+Примечания:
+
+!!! Если мод не обновляется, нажмите "Починить" в лаучнере или отпишитесь и скачайте заново
+
+!!! Найти обмундирование (шлема, бронежелеты, рюкзаки) играбельных фракций можно либо с ящиков с лутом, либо купить на чёрном рынке.
+
+Больше играбельных фракциий в ближайших обновах
+
+Авторы: Original Mission by barbolani Antistasi Community Edition by Official Antistasi Community Magrepack by Outlawled, R3vo and OOster HALs_Store by HallyG, R3vo and barman75 DRO by mbrdmn Discord Rich Presence by ConnorAU Antistasi Plus by Socrates Antistasi Plus VLK Faction by Velka
