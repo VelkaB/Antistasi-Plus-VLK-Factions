@@ -582,25 +582,50 @@ class Templates
 
     //************************************** VLK Chinese Base *****************************************************
 
-    // class VLK_PLA_Base : Base
-    // {
-    //    requiredAddons[] = {"CSK181", "PLAW_Core", "LK_FNCS"};
-    //    basepath = QPATHTOFOLDER(Templates\Templates\VLK);
-    //    logo = "\vlkpictures\datapack\VLK_Mod_Logo.paa";
-    //    priority = 30;
-    //    equipFlags[] = {"VLK"};
-    // };
+    class VLK_PLA_Base : Base
+    {
+        requiredAddons[] = {"CSK181", "PLAW_Core", "LK_FNCS"};
+        basepath = QPATHTOFOLDER(Templates\Templates\VLK);
+        logo = "\vlkpictures\datapack\VLK_Mod_Logo.paa";
+        priority = 30;
+        equipFlags[] = {"VLK"};
+    };
 
-    // class VLK_PLA_Temperate : VLK_PLA_Base
-    // {
-    //     side = "Occ";
-    //     flagTexture = "\vlkpictures\datapack\Flag_China.paa";
-    //     name = "People's Liberation Army Temperate";
-    //     logo = "\vlkpictures\datapack\VLK_Mod_Logo.paa";
-    //     file = "VLK_AI_PLA_Temperate";
-    //     description = $STR_A3AP_setupFactionsTab_usaf;
-    //     climate[] = {"temperate","tropical","arctic", "arid"};
-    // };
+    class VLK_PLA_Temperate : VLK_PLA_Base
+    {
+        side = "Occ";
+        flagTexture = "\vlkpictures\datapack\Flag_China.paa";
+        name = "PLA Temperate";
+        logo = "\vlkpictures\datapack\VLK_Mod_Logo.paa";
+        file = "VLK_AI_PLA_Temperate";
+        description = $STR_A3AP_setupFactionsTab_china;
+        climate[] = {"temperate","tropical","arctic"};
+    };
+
+    class VLK_PLA_Arid : VLK_PLA_Temperate
+    {
+        name = "PLA Arid";
+        file = "VLK_AI_PLA_Arid";
+        climate[] = {"arid"};
+    };
+
+    class VLK_PLA_Temperate_INV : VLK_PLA_Base
+    {
+        side = "Inv";
+        flagTexture = "\vlkpictures\datapack\Flag_China.paa";
+        name = "PLA Temperate";
+        logo = "\vlkpictures\datapack\VLK_Mod_Logo.paa";
+        file = "VLK_AI_PLA_Temperate";
+        description = $STR_A3AP_setupFactionsTab_china;
+        climate[] = {"temperate","tropical","arctic"};
+    };
+
+     class VLK_PLA_Arid_INV : VLK_PLA_Temperate_INV
+    {
+        name = "PLA Arid";
+        file = "VLK_AI_PLA_Arid";
+        climate[] = {"arid"};
+    };
 
     // ************************************** RHS Factions *******************************************************
 

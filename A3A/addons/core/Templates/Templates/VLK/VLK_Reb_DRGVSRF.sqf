@@ -72,10 +72,8 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 //////////////////////////////////////
 
 ["blackMarketStock", [
-    ["rhs_Metis_9k115_2_msv", 1000*ArmsDealerPrice, "ARTILLERY", {tierWar > 4}],
-    ["rhs_Kornet_9M133_2_msv", 1400*ArmsDealerPrice, "ARTILLERY", {tierWar > 5}],
-
-    
+    ["rhs_Metis_9k115_2_msv", 1000*ArmsDealerPrice, "STATIC", {tierWar > 4}],
+    ["rhs_Kornet_9M133_2_msv", 1400*ArmsDealerPrice, "STATIC", {tierWar > 5}],
 
     ["rhs_tigr_m_msv", 500*ArmsDealerPrice, "CAR", {true}],
     ["CUP_O_GAZ_Vodnik_Unarmed_RU", 500*ArmsDealerPrice, "CAR", {true}],

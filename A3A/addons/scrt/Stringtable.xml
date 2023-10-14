@@ -316,6 +316,12 @@
                 <Chinesesimp>美国陆军\侵略性的、压倒性的力量。</Chinesesimp>
                 <Korean>미 육군.\n공격적이고 압도적인 군사력.</Korean>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_china">
+                <Original>The People's Liberation Army.\nPLA is the armed wing of the Chinese Communist Party (CCP) and the principal military force of the People's Republic of China. The PLA consists of five service branches: the Ground Force, Navy, Air Force, Rocket Force, and Strategic Support Force.</Original>
+                <Russian>Народно-освободительная армия Китая.\nНОАК - вооруженное крыло Коммунистической партии Китая (КПК) и главная военная сила Китайской Народной Республики. НОАК состоит из пяти родов войск: сухопутных войск, Военно-морского флота, военно-воздушных сил, ракетных войск и Сил стратегической поддержки.</Russian>
+                <Chinesesimp>The People's Liberation Army.\nPLA is the armed wing of the Chinese Communist Party (CCP) and the principal military force of the People's Republic of China. The PLA consists of five service branches: the Ground Force, Navy, Air Force, Rocket Force, and Strategic Support Force.</Chinesesimp>
+                <Korean>The People's Liberation Army.\nPLA is the armed wing of the Chinese Communist Party (CCP) and the principal military force of the People's Republic of China. The PLA consists of five service branches: the Ground Force, Navy, Air Force, Rocket Force, and Strategic Support Force.</Korean>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_un">
                 <Original>UN Peacekeeping Force.\nThe armed contingents of the UN Member States allocated in accordance with the UN Charter in order to prevent or eliminate threats to peace and security through joint coercive actions if economic and political measures prove or prove insufficient.</Original>
                 <Russian>Миротворческие силы ООН.\nВооружённые контингенты государств - членов ООН, выделенные согласно Уставу ООН в целях предотвращения или ликвидации угрозы миру и безопасности путём совместных принудительных действий, если меры экономического и политического характера окажутся или оказались недостаточными.</Russian>

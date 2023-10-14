@@ -17,23 +17,22 @@
 ["surrenderCrate", "Box_NATO_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
-["vehiclesBasic", ["VME_PLA_Quadbike_PLAN"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["VME_PLA_BJ2022", "VME_PLA_EQ2050", "VME_PLA_EQ2050_Flatbed", "CSK181"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["VME_PLA_BJ2022patrol", "VME_PLA_EQ2050_MG", "VME_PLA_EQ2050_reconGL", "VME_PLA_EQ2050_reconMG", "VME_PLA_EQ2050_GL" ,"VME_PLA_EQ2050_AT"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["SX2220", "SX2316"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["VME_PLA_SX2190flatbed", "SX2220_Flat"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["VME_PLA_SX2190Reammo"]] call _fnc_saveToTemplate;
-["vehiclesRepairTrucks", ["VME_PLA_SX2190Repair"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["VME_PLA_SX2190Refuel"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["vme_wzAMB"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["vme_ZSL92A", "vme_ZSL92B", "vme_WZ551"]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["vme_AFT9", "vme_ZSL92B", "vme_ZSL92A", "vme_WZ551", "VME_PLA_ZBD03"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["vme_AFT9", "VME_PLA_ZBD03", "VME_PLA_ZBD04", "VME_PLA_ZBD08", "O_ZBD05", "O_ZBL09", "O_ZBD04A", "VME_PLA_AFT10"]] call _fnc_saveToTemplate;
-["vehiclesIFVs", ["O_ZBD05", "O_ZBL09", "O_ZBD04A", "VME_PLA_AFT10"]] call _fnc_saveToTemplate;
-
-["vehiclesLightTanks",  ["vme_PTL02", "VME_PLA_ZTL11", "O_ZTL11"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["O_ZTD05", "O_ZTQ15", "O_ZTZ96B", "O_ZTZ99", "O_ZTZ99A", "VME_PLA_ZTZ96A", "VME_QN506"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["O_PGZ09_AA", "VME_PLA_HQ7", "VME_PLA_PGZ04", "O_PGZ09_TY90", "VME_PLA_HQ61", "VME_PLA_HQ64"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["VME_PLA_Quadbike_DES"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["VME_PLA_BJ2022_DES", "VME_PLA_EQ2050", "VME_PLA_EQ2050_Flatbed", "CSK181"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["VME_PLA_BJ2022patrol_DES", "VME_PLA_EQ2050_MG", "VME_PLA_EQ2050_reconGL", "VME_PLA_EQ2050_reconMG", "VME_PLA_EQ2050_GL" ,"VME_PLA_EQ2050_AT"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["VME_PLA_SX2190_DES"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["VME_PLA_SX2190flatbed_DES"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["VME_PLA_SX2190Reammo_DES"]] call _fnc_saveToTemplate;
+["vehiclesRepairTrucks", ["VME_PLA_SX2190Repair_DES"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["VME_PLA_SX2190Refuel_DES"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["vme_wzAMB_DES"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["vme_ZSL92A_DES", "vme_ZSL92B_DES", "vme_WZ551_DES"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["vme_AFT9_DES", "vme_ZSL92B_DES", "vme_ZSL92A_DES", "vme_WZ551_DES", "VME_PLA_ZBD03_DES"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["vme_AFT9_DES", "VME_PLA_ZBD03_DES", "VME_PLA_ZBD04_DES", "VME_PLA_ZBD08", "VME_PLA_ZBL09_DES", "", "VME_PLA_AFT10_DES"]] call _fnc_saveToTemplate;
+["vehiclesIFVs", [ "VME_PLA_ZBL09_DES", "VME_PLA_ZBD04_DES", "VME_PLA_AFT10_DES"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["vme_PTL02", "VME_PLA_ZTL11_DES"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["VME_PLA_ZTZ99_DES", "VME_PLA_ZTZ99A_DES", "VME_PLA_ZTZ96A_DES", "VME_QN506_DES"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["VME_PLA_PGZ07_DES", "VME_PLA_HQ7_DES", "VME_PLA_PGZ04_DES", "VME_PLA_HQ61_DES", "VME_PLA_HQ64_DES"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["vme_Type22"]] call _fnc_saveToTemplate;
@@ -47,7 +46,7 @@
 ["vehiclesHelisLightAttack", ["VME_PLA_z9_CAS", "Z11WA_2", "Z11WA"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["Z10", "VME_PLA_Mi171", "Z19"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", ["PLA_PHZ81", "O_PLL09", "O_PLZ05", "vme_PLL05", "VME_PLA_PLZ07", "vme_SM4_PLARF"]] call _fnc_saveToTemplate;
+["vehiclesArtillery", ["PLA_PHZ81_DES", "vme_PLL05_DES", "VME_PLA_PLZ07_DES", "vme_SM4_DES"]] call _fnc_saveToTemplate;
 ["magazines", createHashMapFromArray [
     ["rhsusf_m109_usarmy",["rhs_mag_155mm_m795_28"]]
 ]] call _fnc_saveToTemplate;
@@ -55,20 +54,20 @@
 ["uavsAttack", ["vme_CH4B", "vme_CH3", "vme_CH7"]] call _fnc_saveToTemplate;
 ["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate;
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
-["vehiclesMilitiaLightArmed", ["VME_PLA_BJ2022patrol", "VME_PLA_EQ2050_MG", "VME_PLA_EQ2050_reconGL", "VME_PLA_EQ2050_reconMG", "VME_PLA_EQ2050_GL"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["VME_PLA_SX2190"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["VME_PLA_BJ2022", "VME_PLA_EQ2050", "VME_PLA_EQ2050_Flatbed"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaAPCs", ["vme_ZSL92A", "vme_ZSL92B", "vme_WZ551"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["VME_PLA_BJ2022patrol_DES", "VME_PLA_EQ2050_MG", "VME_PLA_EQ2050_reconGL", "VME_PLA_EQ2050_reconMG", "VME_PLA_EQ2050_GL"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["VME_PLA_SX2190_DES"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["VME_PLA_BJ2022_DES", "VME_PLA_EQ2050", "VME_PLA_EQ2050_Flatbed"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", ["vme_ZSL92A_DES", "vme_ZSL92B_DES", "vme_WZ551_DES"]] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["VME_PLA_BJ2022patrol"]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["VME_PLA_BJ2022patrol_DES"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["VME_Type85_Static_AA"]] call _fnc_saveToTemplate;
-["staticATs", ["VME_PLA_HJ11"]] call _fnc_saveToTemplate;
+["staticMGs", ["VME_Type85_Static_AA_DES"]] call _fnc_saveToTemplate;
+["staticATs", ["VME_PLA_HJ11_DES"]] call _fnc_saveToTemplate;
 ["staticAAs", ["rhs_Igla_AA_pod_msv"]] call _fnc_saveToTemplate;
 ["staticMortars", ["VME_PLA_Type87Mortar_PLAFOR"]] call _fnc_saveToTemplate;
-["staticHowitzers", ["rhs_D30_msv", "PLA_PHZ81", "O_PLL09", "O_PLZ05", "vme_PLL05", "VME_PLA_PLZ07", "vme_SM4_PLARF"]] call _fnc_saveToTemplate;
+["staticHowitzers", ["rhs_D30_msv", "PLA_PHZ81_DES", "vme_PLL05_DES", "VME_PLA_PLZ07_DES", "vme_SM4_DES"]] call _fnc_saveToTemplate;
 
-["vehicleRadar", "O_OChina_R750_Cronus_Radar_01"] call _fnc_saveToTemplate;
+["vehicleRadar", "O_Radar_System_02_F"] call _fnc_saveToTemplate;
 ["vehicleSam", "HQ6A"] call _fnc_saveToTemplate;
 
 ["howitzerMagazineHE", ["rhs_mag_3of56_10", "rhs_mag_3of56_10", "rhs_mag_HE_2a33", "rhs_mag_WP_2a33", "rhs_mag_m21of_1"]] call _fnc_saveToTemplate;
@@ -80,45 +79,40 @@
 ["minefieldAT", ["rhsusf_mine_M19"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["rhsusf_mine_m14"]] call _fnc_saveToTemplate;
 
+
 #include "VLK_Vehicle_Attributes.sqf"
 
 ["variants", [
-    ["VME_PLA_BJ2022", ["PLAFor1",1]],
-    ["VME_PLA_EQ2050", ["PLAFor1",1]],
-    ["VME_PLA_EQ2050_Flatbed", ["PLAFor1",1]],
-    ["CSK181", ["Olive",1]],
-    ["VME_PLA_BJ2022patrol", ["PLAFor1",1]],
-    ["VME_PLA_EQ2050_MG", ["PLAFor1",1]],
-    ["VME_PLA_EQ2050_reconGL", ["PLAFor1",1]],
-    ["VME_PLA_EQ2050_reconMG", ["PLAFor1",1]],
-    ["VME_PLA_EQ2050_GL", ["PLAFor1",1]],
-    ["VME_PLA_EQ2050_AT", ["PLAFor1",1]],
-    ["vme_wzAMB", ["PLA_ForestDig",1]],
-    ["VME_PLA_SX2190", ["PLA_Forest",1]],
-    ["SX2220", ["Olive",1]],
-    ["SX2316", ["Olive",1]],
-    ["VME_PLA_SX2190flatbed", ["PLA_Forest",1]],
-    ["SX2220_Flat", ["Olive",1]],
-    ["SX2316_Flat", ["Olive",1]],
-    ["VME_PLA_SX2190Repair", ["PLA_Forest",1]],
-    ["VME_PLA_SX2190Reammo", ["PLA_Forest", 1]],
-    ["VME_PLA_ZBD03", ["PLAFor1",1]],
-    ["vme_ZSL92A", ["PLA_ForestDig",1]],
-    ["vme_WZ551", ["PLA_ForestDig",1]],
-    ["vme_ZSL92B", ["PLA_ForestDig",1]],
-    ["vme_AFT9", ["PLA_ForestDig",1]],
-    ["VME_PLA_ZBD03", ["PLAFor1",1]],
-    ["VME_PLA_ZBD04", ["PLA_ForestDig",1]],
-    ["VME_PLA_ZBD08", ["PLA_ForestDig",1]],
-    ["O_ZBD05", ["woodcamo",1]],
-    ["O_ZBL09", ["Woodcamo",1]],
-    ["O_ZBD04A", ["Woodcamo",1]],
-    ["VME_PLA_AFT10", ["PLA_ForestDig",1]],
-    ["vme_PTL02", ["PLL_ForestDig",1]],
-    ["VME_PLA_ZTL11", ["PLL_ForestDig",1]],
-    ["O_ZTL11", ["Woodcamo",1]],
-    ["O_ZTD05", ["woodcamo",1]],
-    ["HQ6A", ["Woodland",1]]
+["VME_PLA_BJ2022_DES", ["PLADes1",1]],
+["VME_PLA_EQ2050", ["PLAFor1",1]],
+["VME_PLA_EQ2050_Flatbed", ["PLAFor1",1]],
+["CSK181", ["khaki",1]],
+["VME_PLA_BJ2022patrol_DES", ["PLADes1",1]],
+["VME_PLA_EQ2050_MG", ["PLAFor1",1]],
+["VME_PLA_EQ2050_reconGL", ["PLAFor1",1]],
+["VME_PLA_EQ2050_reconMG", ["PLAFor1",1]],
+["VME_PLA_EQ2050_GL", ["PLAFor1",1]],
+["VME_PLA_EQ2050_AT", ["PLAFor1",1]],
+["vme_wzAMB_DES", ["PLA_AMBDesert",1]],
+["vme_WZ551_DES", ["PLA_Desert",1]],
+["vme_ZSL92B_DES", ["PLA_Desert",1]],
+["vme_ZSL92A_DES", ["PLA_Desert",1]],
+["VME_PLA_ZBD03_DES", ["PLADes1",1]],
+["vme_AFT9_DES", ["PLA_Desert",1]],
+["VME_PLA_AFT10_DES", ["PLADes1",1]],
+["vme_PTL02", ["PLL_Desert",1]],
+["VME_PLA_ZTL11_DES", ["PLADes1",1]],
+["VME_PLA_ZTZ96A_DES", ["PLADes1",1]],
+["VME_QN506_DES", ["PLA_SAND",1]],
+["VME_PLA_ZTZ99_DES", ["PLADes1",1]],
+["VME_PLA_HQ7_DES", ["PLADes1",1]],
+["VME_PLA_ZTZ99A_DES", ["PLADes1",1]],
+["vme_SM4_DES", ["PLL_DesertCamo1",1]],
+["vme_PLL05_DES", ["PLL_Desert",1]],
+["VME_PLA_ZBL09_DES", ["PLADes1",1]],
+["O_Radar_System_02_F", ["AridHex",1]],
+["HQ6A", ["desert",1]],
+["PLA_PHZ81_DES", ["PLA_Desert",1]]
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
@@ -127,7 +121,8 @@
 
 ["voices", ["male03chi","male02chi","male01chi"]] call _fnc_saveToTemplate;
 ["faces", ["AsianHead_A3_04","AsianHead_A3_06","AsianHead_A3_01","VME_asianHead_01",
-"VME_asianHead_02","VME_asianHead_03"]] call _fnc_saveToTemplate;
+"VME_asianHead_02","VME_asianHead_03"
+]] call _fnc_saveToTemplate;
 
 
 //////////////////////////
@@ -174,13 +169,13 @@ _loadoutData set ["NVGs", ["CUP_NVG_PVS15_black"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["rangefinders", ["rhsusf_bino_lerca_1200_black"]];
 
-_loadoutData set ["traitorUniforms", ["uniform_FS_Gloves_W"]];
-_loadoutData set ["traitorVests", ["v19_rMed_LIEUTENANT_W"]];
-_loadoutData set ["traitorHats", ["GH_h19_FAST_Tag"]];
+_loadoutData set ["traitorUniforms", ["uniform_FS_Gloves_D"]];
+_loadoutData set ["traitorVests", ["v19_rMed_LIEUTENANT_D"]];
+_loadoutData set ["traitorHats", ["GH_h19_FAST_Tag_D"]];
 
-_loadoutData set ["officerUniforms", ["uniform_FS_Gloves_W"]];
-_loadoutData set ["officerVests", ["v19_rMed_LIEUTENANT_W"]];
-_loadoutData set ["officerHats", ["GH_h19_FAST_Tag"]];
+_loadoutData set ["officerUniforms", ["uniform_FS_Gloves_D"]];
+_loadoutData set ["officerVests", ["v19_rMed_LIEUTENANT_D"]];
+_loadoutData set ["officerHats", ["GH_h19_FAST_Tag_D"]];
 
 _loadoutData set ["uniforms", []];
 _loadoutData set ["MGvests", []];
@@ -190,7 +185,7 @@ _loadoutData set ["SNIvests", []];
 _loadoutData set ["GLvests", []];
 _loadoutData set ["vests", []];
 _loadoutData set ["backpacks", []];
-_loadoutData set ["atBackpacks", ["bag19"]];
+_loadoutData set ["atBackpacks", ["bag19_S"]];
 _loadoutData set ["longRangeRadios", ["UK3CB_B_B_Radio_Backpack"]];
 _loadoutData set ["helmets", []];
 _loadoutData set ["slHat", ["GFH_h19_FAST_Tag_SERGEANT_W"]];
@@ -333,13 +328,13 @@ _sfLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData set ["uniforms", ["uniform_FS_Gloves_C", "uniform_FS_Gloves_Holster_C", "uniform_FS_C"]];
-_eliteLoadoutData set ["vests", ["v19_RadioB_C"]];
-_eliteLoadoutData set ["MGvests", ["v19_rHvy_C"]];
-_eliteLoadoutData set ["MEDvests", ["v19_rMed_C"]];
-_eliteLoadoutData set ["GLvests", ["v19_rMed_C"]];
-_eliteLoadoutData set ["backpacks", ["bag19_C"]];
-_eliteLoadoutData set ["helmets", ["GFH_h19_FAST_Tag_SERGEANT_C", "gfh19_FAST_Tag_C"]];
+_eliteLoadoutData set ["uniforms", ["uniform_FS_Gloves_Holster_D", "uniform_FS_Gloves_Holster_D", "uniform_FS_D"]];
+_eliteLoadoutData set ["vests", ["v19_RadioB_D"]];
+_eliteLoadoutData set ["MGvests", ["v19_rHvy_D"]];
+_eliteLoadoutData set ["MEDvests", ["v19_rMed_D"]];
+_eliteLoadoutData set ["GLvests", ["v19_rMed_D"]];
+_eliteLoadoutData set ["backpacks", ["bag19_D"]];
+_eliteLoadoutData set ["helmets", ["GFH_h19_FAST_Tag_SERGEANT_D", "gfh19_FAST_Tag_D"]];
 _eliteLoadoutData set ["NVGs", ["iNVG"]];
 _eliteLoadoutData set ["binoculars", ["Binocular"]];
 _eliteLoadoutData set ["antiInfantryGrenades", ["MagGre822"]];
@@ -410,30 +405,30 @@ _eliteLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData set ["uniforms", ["uniform_FS_W", "uniform_FS_Gloves_W"]];
-_militaryLoadoutData set ["vests", ["v19_rMed", "v19_RadioB"]];
-_militaryLoadoutData set ["MGvests", ["v19_rHvy"]];
-_militaryLoadoutData set ["MEDvests", ["v19_rMed"]];
-_militaryLoadoutData set ["SLvests", ["v19_rHvy_MAJOR_W"]];
-_militaryLoadoutData set ["SNIvests", ["v19_sLgt"]];
-_militaryLoadoutData set ["GLvests", ["v19_rMed"]];
-_militaryLoadoutData set ["backpacks", ["bag19_MAJOR_W"]];
-_militaryLoadoutData set ["helmets", ["gfh19_FAST_Tag"]];
+_militaryLoadoutData set ["uniforms", ["uniform_FS_S", "uniform_FS_Gloves_S"]];
+_militaryLoadoutData set ["vests", ["v19_rMed_S", "v19_RadioB_S"]];
+_militaryLoadoutData set ["MGvests", ["v19_rHvy_S"]];
+_militaryLoadoutData set ["MEDvests", ["v19_rMed_S"]];
+_militaryLoadoutData set ["SLvests", ["v19_rHvy_MAJOR_S"]];
+_militaryLoadoutData set ["SNIvests", ["v19_sLgt_S"]];
+_militaryLoadoutData set ["GLvests", ["v19_rMed_S"]];
+_militaryLoadoutData set ["backpacks", ["bag19_MAJOR_S"]];
+_militaryLoadoutData set ["helmets", ["gfh19_FAST_Tag_S"]];
 _militaryLoadoutData set ["lightATLaunchers", ["vme_pla_PF89"]];
 _militaryLoadoutData set ["lightHELaunchers", ["vme_pla_PF89A"]];
 
 _militaryLoadoutData set ["slRifles", [
-["LZB_QBZ192_VGrip", "LZB_QBZ95_Suppressor", "FX2LIR", "VME_Eotech553", ["30Rnd_580x42_Mag_F"], [], ""],
-["LZB_QBZ192_VGrip", "", "", "VME_Eotech553", ["30Rnd_580x42_Mag_F"], [], ""]
+["LZB_QBZ192_VGrip", "", "", "VME_Eotech553", ["30Rnd_580x42_Mag_F"], [], ""],
+["LZB_QBZ192_VGrip", "", "", "", ["30Rnd_580x42_Mag_F"], [], ""]
 ]];
 _militaryLoadoutData set ["rifles", [
-["LZB_QBZ191_VGrip", "LZB_QBZ95_Suppressor", "", "VME_Eotech553", ["30Rnd_580x42_Mag_F"], [], ""],
-["LZB_QBZ191_VGrip", "LZB_QBZ95_Suppressor", "", "", ["30Rnd_580x42_Mag_F"], [], ""],
+["LZB_QBZ191_VGrip", "", "", "VME_Eotech553", ["30Rnd_580x42_Mag_F"], [], ""],
+["LZB_QBZ191_VGrip", "", "", "", ["30Rnd_580x42_Mag_F"], [], ""],
 ["LZB_QBZ191_VGrip", "", "", "VME_Eotech553", ["30Rnd_580x42_Mag_F"], [], ""]
 ]];
 _militaryLoadoutData set ["carbines", [
-["LZB_QBZ191_VGrip", "LZB_QBZ95_Suppressor", "", "VME_Eotech553", ["30Rnd_580x42_Mag_F"], [], ""],
-["LZB_QBZ191_VGrip", "LZB_QBZ95_Suppressor", "", "", ["30Rnd_580x42_Mag_F"], [], ""],
+["LZB_QBZ191_VGrip", "", "", "VME_Eotech553", ["30Rnd_580x42_Mag_F"], [], ""],
+["LZB_QBZ191_VGrip", "", "", "", ["30Rnd_580x42_Mag_F"], [], ""],
 ["LZB_QBZ191_VGrip", "", "", "VME_Eotech553", ["30Rnd_580x42_Mag_F"], [], ""]
 ]];
 _militaryLoadoutData set ["SMGs", [
@@ -442,7 +437,7 @@ _militaryLoadoutData set ["SMGs", [
 _militaryLoadoutData set ["grenadeLaunchers", [    
 ["vme_pla_qbz95_1GL", "", "", "", ["VME_QBZ95_1_30Rnd_DBP87", "VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"], ["VME_1Rnd_HE_GL"], ""],
 ["vme_pla_qbz95_1GL", "", "", "VME_Eotech553", ["VME_QBZ95_1_30Rnd_DBP87", "VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"], ["VME_1Rnd_HE_GL"], ""],
-["vme_pla_qbz95_1GL", "", "", "AMF_Red_Dot_Sight", ["VME_QBZ95_1_30Rnd_DBP87", "VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"], ["VME_1Rnd_HE_GL"], ""]
+["vme_pla_qbz95_1GL", "", "", "", ["VME_QBZ95_1_30Rnd_DBP87", "VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"], ["VME_1Rnd_HE_GL"], ""]
 ]];
 _militaryLoadoutData set ["machineGuns", [
 ["VME_PLA_QJY88", "", "", "", ["VME_QJY88_200Rnd_DVP88_Heavy", "VME_QJY88_200Rnd_DBP10_Tracer_Green"], [], ""]
@@ -478,12 +473,12 @@ _policeLoadoutData set ["sidearms", [
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData set ["uniforms", ["uniform_FS_W", "uniform_FS_Gloves_W"]];
-_militiaLoadoutData set ["vests", ["v19_rMed", "v19_RadioB"]];
-_militiaLoadoutData set ["backpacks", ["bag19_MAJOR_W"]];
-_militiaLoadoutData set ["atBackpacks", ["bag19_MAJOR_W"]];
-_militiaLoadoutData set ["helmets", ["gfh19_FAST_Tag"]];
-_militiaLoadoutData set ["slHat", ["GFH_h19_FAST_Tag_LIETENANT_C"]];
+_militiaLoadoutData set ["uniforms", ["uniform_FS_S", "uniform_FS_Gloves_S"]];
+_militiaLoadoutData set ["vests", ["v19_rMed_S", "v19_RadioB_S"]];
+_militiaLoadoutData set ["backpacks", ["bag19_MAJOR_S"]];
+_militiaLoadoutData set ["atBackpacks", ["bag19_MAJOR_S"]];
+_militiaLoadoutData set ["helmets", ["gfh19_FAST_Tag_S"]];
+_militiaLoadoutData set ["slHat", ["GFH_h19_FAST_Tag_LIETENANT_S"]];
 
 _militiaLoadoutData set ["lightATLaunchers", ["vme_pla_PF89"]];
 
@@ -496,14 +491,14 @@ _militiaLoadoutData set ["rifles", [
 ["QBZ95_1_DF_VGrip", "", "", "", ["30Rnd_580x42_Mag_F"], [], ""],
 ["QBZ95_1_VGrip", "", "", "", ["30Rnd_580x42_Mag_F"], [], ""],
 ["QBZ95_1_DF", "", "", "", ["30Rnd_580x42_Mag_F"], [], ""],
-["vme_pla_qjb95_1", "", "", "", ["VME_QJB95_1_75Rnd_DBP10", "VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"], [], ""]
+["vme_pla_qjb95_1", "", "", "", ["VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"], [], ""]
 ]];
 _militiaLoadoutData set ["carbines", [
 ["QBZ95_1", "", "", "", ["30Rnd_580x42_Mag_F"], [], ""],
 ["QBZ95_1_DF_VGrip", "", "", "", ["30Rnd_580x42_Mag_F"], [], ""],
 ["QBZ95_1_VGrip", "", "", "", ["30Rnd_580x42_Mag_F"], [], ""],
 ["QBZ95_1_DF", "", "", "", ["30Rnd_580x42_Mag_F"], [], ""],
-["vme_pla_qjb95_1", "", "", "", ["VME_QJB95_1_75Rnd_DBP10", "VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"], [], ""]
+["vme_pla_qjb95_1", "", "", "", ["VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"], [], ""]
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
 ["vme_pla_qbz95_1GL", "", "", "", ["VME_QBZ95_1_30Rnd_DBP87", "VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"], ["VME_1Rnd_HE_GL"], ""]

@@ -11454,7 +11454,6 @@ class cfgHALsStore
 			ITEM(G_AirPurifyingRespirator_02_sand_F, 200, MISC_STOCK);
 			ITEM(G_AirPurifyingRespirator_02_olive_F, 200, MISC_STOCK);
 			ITEM(G_AirPurifyingRespirator_02_black_F, 200, MISC_STOCK);
-
 		};
 
 		class VSRF 
