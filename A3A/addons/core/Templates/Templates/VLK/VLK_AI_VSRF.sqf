@@ -5,9 +5,9 @@
 ["name", "Russian Army"] call _fnc_saveToTemplate;
 ["spawnMarkerName", format [localize "STR_supportcorridor", "Russian"]] call _fnc_saveToTemplate;
 
-["flag", "rhs_Flag_Russia_F"] call _fnc_saveToTemplate;
-["flagTexture", "rhsafrf\addons\rhs_main\data\flag_rus_co.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_Russia"] call _fnc_saveToTemplate;
+["flag", "Flag_RF1_F"] call _fnc_saveToTemplate;
+["flagTexture", "\vlkpictures\datapack\Flag_RF1.paa"] call _fnc_saveToTemplate;
+["flagMarkerType", "flag_RF_marker"] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //

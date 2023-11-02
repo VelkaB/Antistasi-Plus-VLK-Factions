@@ -336,7 +336,7 @@ class Templates
     class VLK_DRGVSRF : VLK_Base
     {
         side = "Reb";
-        flagTexture = "rhsafrf\addons\rhs_main\data\flag_rus_co.paa";
+        flagTexture = "\vlkpictures\datapack\Flag_RF1.paa";
         logo = "\vlkpictures\datapack\VLK_Mod_Logo.paa";
         name = "DRG AFRF";
         file = "VLK_Reb_DRGVSRF";
@@ -376,7 +376,7 @@ class Templates
    class VLK_AFRF : VLK_Base
     {
         side = "Inv";
-        flagTexture = "rhsafrf\addons\rhs_main\data\flag_rus_co.paa";
+        flagTexture = "\vlkpictures\datapack\Flag_RF1.paa";
         logo = "\vlkpictures\datapack\VLK_Mod_Logo.paa";
         name = "Russian Army Temperate";
         file = "VLK_AI_VSRF";
@@ -394,7 +394,7 @@ class Templates
    class VLK_AFRF_OCC : VLK_Base
     {
         side = "Occ";
-        flagTexture = "rhsafrf\addons\rhs_main\data\flag_rus_co.paa";
+        flagTexture = "\vlkpictures\datapack\Flag_RF1.paa";
         logo = "\vlkpictures\datapack\VLK_Mod_Logo.paa";
         name = "Russian Army Temperate";
         file = "VLK_AI_VSRF";
@@ -580,6 +580,16 @@ class Templates
         description = $STR_A3AP_setupFactionsTab_UKSF_VLK;
     };
 
+    class VLK_ChDKZ : VLK_Base
+    {
+        side = "Reb";
+        flagTexture = "\vlkpictures\datapack\Flag_ChDKZ.paa";
+        logo = "\vlkpictures\datapack\VLK_Mod_Logo.paa";
+        name = "CHDKZ";
+        file = "VLK_Reb_ChDKZ";
+        description = $STR_A3AP_setupFactionsTab_CHDKZ_VLK;
+    };
+
     //************************************** VLK Chinese Base *****************************************************
 
     class VLK_PLA_Base : Base
@@ -625,6 +635,28 @@ class Templates
         name = "PLA Arid";
         file = "VLK_AI_PLA_Arid";
         climate[] = {"arid"};
+    };
+
+    //************************************** VLK Sweden/Finland Base *****************************************************
+
+    class VLK_SFP_Base : Base
+    {
+        requiredAddons[] = {"sfp_ak4", "sfp_norrkoping"};
+        basepath = QPATHTOFOLDER(Templates\Templates\VLK);
+        logo = "\vlkpictures\datapack\VLK_Mod_Logo.paa";
+        priority = 30;
+        equipFlags[] = {"VLK"};
+    };
+
+    class VLK_Sweden : VLK_SFP_Base
+    {
+        side = "Occ";
+        flagTexture = "\vlkpictures\datapack\Flag_Sweden.paa";
+        name = "Försvarsmakten";
+        logo = "\vlkpictures\datapack\VLK_Mod_Logo.paa";
+        file = "VLK_AI_Sweden_Temperate";
+        description = $STR_A3AP_setupFactionsTab_sweden;
+        climate[] = {"temperate","tropical","arctic", "arid"};
     };
 
     // ************************************** RHS Factions *******************************************************

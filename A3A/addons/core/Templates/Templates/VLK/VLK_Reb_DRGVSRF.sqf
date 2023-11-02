@@ -6,9 +6,9 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 
 ["name", "DRG AFRF"] call _fnc_saveToTemplate; 						
 
-["flag", "rhs_Flag_Russia_F"] call _fnc_saveToTemplate;
-["flagTexture", "rhsafrf\addons\rhs_main\data\flag_rus_co.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_Russia"] call _fnc_saveToTemplate;
+["flag", "Flag_RF1_F"] call _fnc_saveToTemplate;
+["flagTexture", "\vlkpictures\datapack\Flag_RF1.paa"] call _fnc_saveToTemplate;
+["flagMarkerType", "flag_RF_marker"] call _fnc_saveToTemplate;
 
 ///////////////////////////
 //    Red Box Vehicles   //
@@ -71,7 +71,28 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 
-["blackMarketStock", [
+private _shopRA2035 = if (isClass (configFile >> "CfgPatches" >> "min_rf_vehicle")) then {
+    [
+    ["min_rf_gaz_2330_HMG", 1600*ArmsDealerPrice, "CAR", {tierWar > 4}],
+    ["min_rf_gaz_2330_HMG_desert", 1600*ArmsDealerPrice, "CAR", {tierWar > 4}],
+    ["min_rf_2b26", 13000*ArmsDealerPrice, "ARTILLERY", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["min_rf_2b26_desert", 13000*ArmsDealerPrice, "ARTILLERY", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["min_rf_t_15", 10000*ArmsDealerPrice, "APC", {tierWar > 6 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["min_rf_t_15_desert", 10000*ArmsDealerPrice, "APC", {tierWar > 6 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["min_rf_t_14", 15500*ArmsDealerPrice, "TANK", {tierWar > 8 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["min_rf_t_14_desert", 15500*ArmsDealerPrice, "TANK", {tierWar > 8 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}], 
+    ["min_rf_sa_22", 4500*ArmsDealerPrice, "ANTIAIR", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["min_rf_sa_22_desert", 4500*ArmsDealerPrice, "ANTIAIR", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["min_rf_heli_light_black", 5000*ArmsDealerPrice, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["min_rf_ka_52", 10500*ArmsDealerPrice, "HELI", {tierWar > 7 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["min_rf_su_34", 11000*ArmsDealerPrice, "PLANE", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
+    ]
+} else {
+    []
+};
+
+
+private _vehiclesBlackMarket = _shopRA2035 + [
     ["rhs_Metis_9k115_2_msv", 1000*ArmsDealerPrice, "STATIC", {tierWar > 4}],
     ["rhs_Kornet_9M133_2_msv", 1400*ArmsDealerPrice, "STATIC", {tierWar > 5}],
 
@@ -89,9 +110,9 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     
     ["rhs_D30_at_msv", 2000*ArmsDealerPrice, "ARTILLERY", {tierWar > 4}],
     ["rhs_D30_msv", 5000*ArmsDealerPrice, "ARTILLERY", {tierWar > 5}],
-    ["RHS_BM21_MSV_01", 12000*ArmsDealerPrice, "ARTILLERY", {tierWar > 7}],
-    ["rhs_9k79", 50000*ArmsDealerPrice, "ARTILLERY", {tierWar > 8}],
-    ["rhs_9k79_K", 28000*ArmsDealerPrice, "ARTILLERY", {tierWar > 7}],
+    ["RHS_BM21_MSV_01", 12000*ArmsDealerPrice, "ARTILLERY", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["rhs_9k79", 50000*ArmsDealerPrice, "ARTILLERY", {tierWar > 8 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["rhs_9k79_K", 28000*ArmsDealerPrice, "ARTILLERY", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
     ["rhs_2s1_tv", 10000*ArmsDealerPrice, "ARTILLERY", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
     ["rhs_2s3_tv", 13000*ArmsDealerPrice, "ARTILLERY", {tierWar > 6 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],               
 
@@ -122,10 +143,10 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     ["rhs_t14_tv", 15000*ArmsDealerPrice, "TANK", {tierWar > 8 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
     ["rhs_t90a_tv", 10000*ArmsDealerPrice, "TANK", {tierWar > 6 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],        
     
-    ["rhs_zsu234_aa", 3000*ArmsDealerPrice, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["CUP_O_UAZ_AA_RU", 1500*ArmsDealerPrice, "AA", {tierWar > 2}],
-    ["UK3CB_KDF_I_MTLB_ZU23", 2000*ArmsDealerPrice, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["UK3CB_O_2S6M_Tunguska_VPV", 5000*ArmsDealerPrice, "AA", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],    
+    ["rhs_zsu234_aa", 3000*ArmsDealerPrice, "ANTIAIR", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["CUP_O_UAZ_AA_RU", 1500*ArmsDealerPrice, "ANTIAIR", {tierWar > 2}],
+    ["UK3CB_KDF_I_MTLB_ZU23", 2000*ArmsDealerPrice, "ANTIAIR", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["UK3CB_O_2S6M_Tunguska_VPV", 5000*ArmsDealerPrice, "ANTIAIR", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],    
 
     ["O_UAV_02_dynamicLoadout_F", 7000*ArmsDealerPrice, "PLANE", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
     ["CUP_O_Pchela1T_RU", 3000*ArmsDealerPrice, "PLANE", {tierWar > 3 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
@@ -137,14 +158,15 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     ["RHS_Mi8AMT_vvsc", 3550*ArmsDealerPrice, "HELI", {tierWar > 3 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
     ["CUP_O_MI6T_RU", 4000*ArmsDealerPrice, "HELI", {tierWar > 3 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
     ["CUP_O_MI6A_RU", 4000*ArmsDealerPrice, "HELI", {tierWar > 3 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["RHS_Mi8MTV3_heavy_vvsc", 5500*ArmsDealerPrice, "HELI", {tierWar > 3 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["RHS_Mi8MTV3_heavy_vvsc", 5500*ArmsDealerPrice, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
     ["rhs_ka60_c", 4300*ArmsDealerPrice, "HELI", {tierWar > 3 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
     ["CUP_O_Ka60_Grey_RU", 4500*ArmsDealerPrice, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
     ["RHS_Mi24V_vvsc", 7000*ArmsDealerPrice, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
     ["rhs_mi28n_vvsc", 8000*ArmsDealerPrice, "HELI", {tierWar > 6 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
     ["CUP_O_Ka50_DL_RU", 9000*ArmsDealerPrice, "HELI", {tierWar > 6 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],            
     ["RHS_Ka52_vvsc", 10000*ArmsDealerPrice, "HELI", {tierWar > 7 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
-]] call _fnc_saveToTemplate;
+];
+["blackMarketStock", _vehiclesBlackMarket] call _fnc_saveToTemplate;
 
 ///////////////////////////
 //  Rebel Starting Gear  //

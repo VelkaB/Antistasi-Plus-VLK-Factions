@@ -7788,7 +7788,6 @@ class cfgHALsStore
 			ITEM(hgun_Pistol_heavy_02_F, 150, PISTOL_STOCK);
 			ITEM(CUP_hgun_BallisticShield_Armed_M9, 450, PISTOL_STOCK);
 			ITEM(CUP_hgun_BallisticShield_PMM, 390, PISTOL_STOCK);
-		
 
 		};
 
@@ -9017,7 +9016,6 @@ class cfgHALsStore
 			ITEM(AMF_Samas_VALO_01_F, 800, RIFLE_STOCK);
 			ITEM(AMF_Samas_VALO_painted, 800, RIFLE_STOCK);
 			ITEM(amf_sig552, 800, RIFLE_STOCK);
-
 
 		};
 

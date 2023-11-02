@@ -124,6 +124,36 @@ class CfgVehicles
 			init = "(_this select 0) setFlagTexture '\vlkpictures\datapack\Flag_UKSAS1'";
 		};
 	};
+	class Flag_ChDKZ_F : FlagPole_F
+	{
+		scope = 2;
+		displayName = "Flag_ChDKZ";
+
+		class EventHandlers 
+		{
+			init = "(_this select 0) setFlagTexture '\vlkpictures\datapack\Flag_ChDKZ'";
+		};
+	};
+	class Flag_RF1_F : FlagPole_F
+	{
+		scope = 2;
+		displayName = "Flag_Russia";
+
+		class EventHandlers 
+		{
+			init = "(_this select 0) setFlagTexture '\vlkpictures\datapack\Flag_RF1'";
+		};
+	};
+	class Flag_Sweden_F : FlagPole_F
+	{
+		scope = 2;
+		displayName = "Flag_Sweden";
+
+		class EventHandlers 
+		{
+			init = "(_this select 0) setFlagTexture '\vlkpictures\datapack\Flag_Sweden'";
+		};
+	};
 };
 
 class CfgMarkers  //Маркеры на карту
@@ -164,6 +194,24 @@ class CfgMarkers  //Маркеры на карту
   name = "Flag_UKSAS1_mark";
   icon = "\vlkpictures\datapack\Marker_UKSAS1.paa";
   texture = "\vlkpictures\datapack\Marker_UKSAS1.paa";
+ };
+ class flag_ChDKZ_marker : flag_NATO
+ {
+  name = "Flag_ChDKZ_mark";
+  icon = "\vlkpictures\datapack\Marker_ChDKZ.paa";
+  texture = "\vlkpictures\datapack\Marker_ChDKZ.paa";
+ };
+ class flag_RF_marker : flag_NATO
+ {
+  name = "Flag_Russia_mark";
+  icon = "\vlkpictures\datapack\Marker_RF.paa";
+  texture = "\vlkpictures\datapack\Marker_RF.paa";
+ };
+ class flag_Sweden_marker : flag_NATO
+ {
+  name = "Flag_Sweden_mark";
+  icon = "\vlkpictures\datapack\Marker_Sweden.paa";
+  texture = "\vlkpictures\datapack\Marker_Sweden.paa";
  };
 };
 

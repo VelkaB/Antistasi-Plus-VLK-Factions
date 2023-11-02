@@ -134,8 +134,7 @@ private _initialRebelEquipment = [
     "rhs_weap_panzerfaust60",
     "rhs_grenade_nbhgr39B_mag", "rhs_grenade_sthgr24_mag",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
-    "B_FieldPack_oli",
-    "Binocular",
+    "B_FieldPack_oli", "Binocular",
     "rhs_weap_rsp30_white","rhs_mag_rsp30_white",
     "rhs_weap_rsp30_green","rhs_mag_rsp30_green",
     "rhs_weap_rsp30_red", "rhs_mag_rsp30_red",
@@ -209,7 +208,6 @@ private _rebUniforms = [
     "UK3CB_LNM_B_H_BoonieHat_FLK_01",
     "UK3CB_LNM_B_H_BoonieHat_FLK_02",
     "UK3CB_LNM_B_H_BoonieHat_FLK_03"
-
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
